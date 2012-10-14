@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page Carousel</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="liquidslider.js"></script>
+<link href="css/liquidslide.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+/*
+// init Object labels
+// init.panelImg , init.panel,init.panelImgFirst, init.slides,init.slide, init.slideNav, init.slideNavLink, init.navStyle,
+// init.moveSlideSpeed, init.nextSlideTime, init.fadeInSpeed, init.fadePanels, init.inPageEventTrack, init.inPageEventLabel, init.autoPlay, init.consoleDebug;
+*/	
+var config = [ '.panel img','#panels .panel','.panel:first img:first','#slides',
+	 '#slides .slide', '.slide_nav', '.slide_nav_item',800,'overlay',  1000, 3000,1500, true, false,'HomeSlides',false, false ];	
+var $jq = jQuery.noConflict(); 
+	$jq(document).ready(function(){ 
+	liquidslider(config);
+	});
+</script>
+</head>
+<body>
+<div id="slide_container">
+  <div id="slides"></div>
+  <div class="slide_nav"></div>
+</div>
+
+
+
+<div id="panels">
+	<div class="panel">
+      <img src="images/direction-1.jpg" alt="" width="800" class="panel_photo"  height="600"/>
+        <div class="caption">
+          <h2>Heading h2</h2>
+          <h3>Sub Heading h3</h3>
+          <p>some paragraph text</p>
+          <a href="#" class="button_auto">Learn More</a>	
+      </div>
+    </div>
+   <!-- panel end -->
+   <div class="panel">
+     <img src="images/direction-2.jpg" alt="" width="800" class="panel_photo"  height="600"/>
+        <div class="caption">
+          <h2>Heading h2</h2>
+          <h3>Sub Heading h3</h3>
+          <p>some paragraph text</p>
+          <a href="#" class="button_auto">Learn More</a>	
+        </div>
+  </div>
+   <!-- panel end -->
+   <div class="panel">
+     <img src="images/direction-3.jpg" alt="" width="800" class="panel_photo"  height="600"/>
+        <div class="caption">
+          <h2>Heading h2</h2>
+          <h3>Sub Heading h3</h3>
+          <p>some paragraph text</p>
+          <a href="#" class="button_auto">Learn More</a>	
+        </div>
+  </div>
+   <!-- panel end -->	
+   <div class="panel">
+      <img src="images/direction-4.jpg" alt="" width="800" class="panel_photo"  height="600"/>
+         <div class="caption">
+           <h2>Heading h2</h2>
+           <h3>Sub Heading h3</h3>
+           <p>some paragraph text</p>
+           <a href="#" class="button_auto">Learn More</a>	
+         </div>
+   </div>
+    <!-- panel end -->	
+</div>
+<!--end slide containter-->
+
+</body>
+</html>
